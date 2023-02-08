@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     text: {
         fontFamily: 'AlongSansSemiBold',
         fontSize: 16,
-        color: 'white',
+        color: 'black',
     },
 
     input: {
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
         width: 0.9 * SCREENWIDTH,
         height: 0.08 * SCREENHEIGHT,
         padding: 10,
-        color: 'white',
+        color: '#FF0099',
         fontFamily: 'AlongSansSemiBold',
         fontSize: 15,
         backgroundColor: 'white',

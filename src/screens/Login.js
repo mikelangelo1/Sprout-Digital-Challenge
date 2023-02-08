@@ -38,16 +38,16 @@ const Signup = () => {
 
       <View style={styles.middle}>
         <SignupInfo 
-            infoTitle='Email' 
-            placeholder='Enter your email address' 
+            infoTitle='' 
+            placeholder='Email' 
             autoComplete='email' 
             value={email}
             onChangeText={userEmail => setEmail(userEmail)}
           />
             
           <SignupInfo 
-            infoTitle='Password' 
-            placeholder='Enter your password' 
+            infoTitle='' 
+            placeholder='Password' 
             autoComplete='password'
             value={password}
             onChangeText={userPassword => setPassword(userPassword)}
@@ -59,15 +59,6 @@ const Signup = () => {
           <Text style={styles.buttonText}> Log in </Text>
         </TouchableOpacity>
 
-        <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
-          <Text style={styles.loginText}> No account yet? </Text>
-
-          <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
-            <Text style={[styles.loginText,  {
-              fontFamily: 'AlongSansExtraBold',
-            }]}> Sign up </Text>
-          </TouchableOpacity>
-        </View>
       </View>
     </View>
   )
@@ -77,75 +68,76 @@ export default Signup
 
 const styles = StyleSheet.create({
   upper: {
-    backgroundColor: 'black',
+    backgroundColor: "#E5E4E2",
     height: SCREENHEIGHT / 3.5,
     width: SCREENWIDTH,
-    padding: 20
+    padding: 20,
   },
 
   middle: {
-    backgroundColor: 'black',
-    height: SCREENHEIGHT - (SCREENHEIGHT / 3.5) - (SCREENHEIGHT / 2.5),
+    backgroundColor: "#E5E4E2",
+    height: SCREENHEIGHT - SCREENHEIGHT / 3.5 - SCREENHEIGHT / 2.5,
     width: SCREENWIDTH,
     padding: 20,
   },
 
   lower: {
-    backgroundColor: 'black',
+    backgroundColor: "#E5E4E2",
     height: SCREENHEIGHT / 2.5,
     width: SCREENWIDTH,
     padding: 20,
-    alignItems: 'center',
-    justifyContent: 'center'
+    alignItems: "center",
+    justifyContent: "center",
   },
 
   titleText: {
-    fontFamily: 'AlongSansExtraBold',
+    fontFamily: "AlongSansExtraBold",
     marginLeft: 10,
     fontSize: 30,
-    color: 'white'
+    color: "#FF0099",
   },
 
   infoText: {
-    fontFamily: 'AlongSansMedium',
-    fontSize: 14,
-    color: 'white',
+    fontFamily: "AlongSansMedium",
+    fontSize: 18,
+    color: "#FF0099",
     marginTop: 50,
   },
 
   IconContainer: {
-    backgroundColor: 'black',
+    backgroundColor: "#FF0099",
     width: 50,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     height: 50,
     marginTop: 20,
     borderRadius: 200,
     borderWidth: 1,
-    borderColor: 'gray',
+    borderColor: "gray",
   },
-  
+
   button: {
-    backgroundColor: 'white',
+    backgroundColor: "#FF0099",
     width: 0.7 * SCREENWIDTH,
     height: 0.07 * SCREENHEIGHT,
-    alignItems: 'center',
-    justifyContent: 'center',
-    alignSelf: 'center',
+    alignItems: "center",
+    justifyContent: "center",
+    alignSelf: "center",
     borderRadius: 15,
+    flexDirection: "row",
   },
-  
+
   buttonText: {
-    fontFamily: 'AlongSansExtraBold',
+    fontFamily: "AlongSansExtraBold",
     fontSize: 18,
-    color: 'black',
-    alignSelf: 'center'
+    color: "white",
+    alignSelf: "center",
   },
 
   loginText: {
-    fontFamily: 'AlongSansMedium',
+    fontFamily: "AlongSansMedium",
     fontSize: 15,
-    color: 'white',
+    color: "white",
     marginTop: 20,
   },
 })
